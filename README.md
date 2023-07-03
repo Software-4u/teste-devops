@@ -15,14 +15,14 @@ Disclaimer: Os CNPJs e CPFs utilizados nos testes foram gerados em https://www.4
 
 *Database*: MySQL
 
-*Ambiente*: Kubernetes, protainer, grafana, zabbix, github action
+*Ambiente*: Kubernetes, helm, protainer, grafana, zabbix, github action
 
 *Obs*: Você pode utilizar frameworks e bibliotecas.
 
 ## O Problema e O que Esperamos
 
 Para este teste esperamos que voce crie um pequeno cluste contendo um ambiente que possa ser colocado em produção.
-1. crie um pipeline para subir um cluster kubernetes com portainer, grafana, zabbix e mysql. alem desses subir tambem a API RESTFull que sera desenvolvida em python suba tambem um container de frontend
+1. crie um pipeline helm para subir um cluster kubernetes com portainer, grafana, zabbix e mysql. alem desses subir tambem a API RESTFull que sera desenvolvida em python suba tambem um container de frontend
 2. Crie um pipeline github action para que seja alterado somente os container de Backend e Frontend.
 3. crie as integrações com zabbix para monitoramento de memoria cpu e armazemanaemto de cada conteiner
 4. integre com grafana para monitoramento da vida do serviço para verificação de bug em tempo real
